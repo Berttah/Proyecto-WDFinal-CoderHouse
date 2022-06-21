@@ -195,6 +195,7 @@ option {
 }
 
 /*Media Sizes*/
+
 @media(min-width:550px){
     .title{
         font-size: 24px;
