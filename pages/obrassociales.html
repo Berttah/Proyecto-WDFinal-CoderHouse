@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/8173b4561c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/unknown.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/obrassociales.css">
+
+    <title>Obras Sociales</title>
+</head>
+<body>
+    <!--Nav Bar Area-->
+    <nav class="nav">
+        <div id="logoArea"><img id="logo" src="../assets/unknown.png" alt="logo"></div>
+        <div id="titleArea"><h1 id="title">Laboratorio de Análisis Clínicos</h1></div>
+        <div class="navButtonArea">
+            <div class="simpleNavContainer">
+                <a href="../index.html"class="navButtonContainer">
+                    <div>Inicio</div>
+                </a>
+            </div>
+            <div class="simpleNavContainer">
+                <a href="../index.html" class="navButtonContainer">
+                    <div>Contacto</div>
+                </a>
+            </div>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Portal del Paciente <i class="fa fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="turnos.html">Turnos</a>
+                  <a href="indicaciones.html">Indicaciones</a>
+                  <a href="obrassociales.html">Obras Sociales</a>
+                  <a href="disclaimer.html">Disclaimer</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+      
+    <main>
+      <div class="mainContainer">
+        <h2 class="title">Cobertura de Obras Sociales</h2>
+        <p class="text1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ipsa autem praesentium excepturi animi assumenda sapiente quod nam mollitia, sunt facere omnis earum at numquam consequuntur, dignissimos doloremque molestiae quam!
+          Recusandae aperiam eligendi labore optio veniam placeat voluptatibus vel debitis! Excepturi consequuntur earum, delectus asperiores, amet quibusdam necessitatibus consequatur sapiente soluta vitae accusamus eligendi cum commodi! Perspiciatis ipsum dicta inventore.
+          Reprehenderit eaque reiciendis suscipit. Blanditiis maxime commodi porro laborum ut reprehenderit! Magnam minima commodi tenetur corporis iste a dignissimos odit reprehenderit sit minus cumque, quas sed, ducimus provident possimus quasi.
+          Vero, magnam illum ipsam dolorum saepe fugiat! Consequatur voluptatum dignissimos aspernatur quidem tempora nesciunt molestiae distinctio nobis. Aut quas nesciunt itaque inventore. Est excepturi totam voluptatum. Cumque veniam dolorem commodi.
+        </p>
+        <h3 class="subtitle">Autorización de Ordenes Ioma</h3>
+        <p class="text2">
+          Consulte el estado de su orden (solo para beneficiarios de IOMA)
+        </p>
+        <div id="toFabaArea">
+          <a id="toFaba" href="http://www.ioma.aol.faba.org.ar/">Redirección a FABA</a>
+        </div>
+      </div>
+    </main>
+
+    <!--
+      <div class="mainDisplayOS">
+            <h2>Cobertura de Obras Sociales</h2>
+            <br>
+            <p class="discText"></p>
+            <h3>Autorizacion de Ordens Ioma</h3>
+            <p>Consulte el estado de su orden (solo para beneficiarios de Ioma)</p>
+            <br>
+            <a id="toFaba" href="http://www.ioma.aol.faba.org.ar/">Redirección a FABA</a>
+      </div>
+    -->
+    <!--Footer-->
+    <footer class="footer">
+      <div id="copyright">© Copyright - 2022</div>
+  </footer>
+    
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>

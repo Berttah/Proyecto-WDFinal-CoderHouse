@@ -1,0 +1,70 @@
+@media(max-width:1000px){
+    body{
+        display: grid;
+        grid-template-rows: auto 180px auto 20px;
+        grid-template-areas: "nav"
+                             "portada"
+                             "info"
+                             "footer";
+        background-color: #DAFFFF;
+    }
+    
+    .portada{
+        grid-area: portada;
+        border-bottom: 3px solid #4C84A1;
+    }
+    .portada img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .info{
+        grid-area: info;
+    
+        display: grid;
+        grid-template-areas: "contacto"
+                             "mapa"
+                             "horarios"
+                             "turno";
+    }
+    .infoTitle{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .info .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .info .mapa{
+        display: flex;
+        justify-content: center;
+    }
+    .info .mapa #mapa{
+        border: 3px solid #4C84A1;
+        border-radius: 8px;
+    }
+
+    .info .horario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .info .turno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .info .turno #textTurnoIndex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 78%;
+        padding-bottom: 5px;
+    }
+}

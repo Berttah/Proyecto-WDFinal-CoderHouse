@@ -1,0 +1,133 @@
+body{
+    display: grid;
+    grid-template-rows: auto 180px auto 20px;
+    grid-template-areas: "nav"
+                         "portada"
+                         "info"
+                         "footer";
+    background-color: #DAFFFF;
+}
+    
+/*Portada Area*/
+.portada{
+    grid-area: portada;
+    border-bottom: 3px solid #4C84A1;
+}
+.portada img{
+    height: 100%;
+    width: 100%;
+}
+
+/*Info Area*/
+.info{
+    grid-area: info;
+    background-color: #F2FFFF;
+
+    display: grid;
+    grid-template-areas: "contacto"
+                         "mapa"
+                         "horarios"
+                         "turno";
+    color: #666;
+}
+.infoTitle{
+    font-size: 20px;
+    margin: 15px;
+}
+.info .contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.info .mapa{
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.info .mapa #mapa{
+    border: 3px solid #4C84A1;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.info .horario{
+    border-top: 2px solid #C3E6E6;
+    grid-area: horarios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.info .turno{
+    border-top: 2px solid #C3E6E6;
+    grid-area: turno;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.info .turno #textTurnoIndex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding-bottom: 5px;
+
+    font-size: 14px;
+}
+
+
+/*Media Sizes*/
+@media(min-width:550px){
+    .info{
+        grid-template-areas: "contacto horarios"
+                             "mapa     horarios"
+                             "turno    turno";
+    }
+    .info .horario{
+        border:none
+    }
+    .info .turno #textTurnoIndex{
+        width: 85%;
+        padding-bottom: 10px;
+    }
+    body{
+        grid-template-rows: auto 250px auto 20px;
+    }
+}
+@media(min-width:768px){
+    .infoTitle{
+        font-size: 24px;
+    }
+    .info p{
+        font-size: 18px;
+    }
+    body{
+        grid-template-rows: auto 280px auto 20px;
+    }
+}
+@media(min-width:1024px){
+    body{grid-template-rows: auto 350px auto 20px;}
+    .info{
+        grid-template-areas: "contacto mapa  horarios"
+                             "turno    turno turno";
+    }
+    .info .mapa{
+        display: flex;
+        align-items: center;
+    }
+    .info p{
+        font-size: 16px;
+    }
+    .info .mapa #mapa{
+        max-width: 90%;
+        height: 80%;
+    }
+}

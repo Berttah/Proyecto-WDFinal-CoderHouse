@@ -1,0 +1,284 @@
+body{
+    display: grid;
+    grid-template-rows: auto auto 20px;
+    grid-template-areas: "nav"
+                         "info"
+                         "footer";
+    background-color: #DAFFFF;
+}
+
+/*Main Area*/
+.mainContainer{
+    background-color: #F2FFFF;
+    display: grid;
+    grid-template-areas: "turnosInfo"
+                         "form";
+    color: #666;
+    justify-items: center;
+}
+.turnosInfo{
+    margin: 20px 20px 0px 20px;
+    display: grid;
+    grid-template-areas: "title"
+                         "text1"
+                         "text2"
+                         "form";
+}
+
+.title{
+    grid-area: title;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text1{
+    grid-area: text1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.text2{
+    grid-area: text2;
+    font-size: 14px;
+}
+
+.formContainer{
+    grid-area: form;
+    width: 90%;
+}
+.turnosForm{
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    border: 2px solid #4C84A1;
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+}
+.formulario{
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "nombreyapellido"
+                         "inputGe"
+                         "inputNo"
+                         "inputAp"
+                         "fechayhorario"
+                         "inputFe"
+                         "inputHo"
+                         "obrasocial"
+                         "inputOS"
+                         "notificacion"
+                         "inputTe"
+                         "inputEm"
+                         "boton";
+}
+span{
+    color: red;
+}
+input {
+    width: calc(100% - 20px);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+    color: #666;
+}
+input:hover, textarea:hover, select:hover {
+    outline: none;
+    border: 1px solid #095484;
+    background: #e6eef7;
+}
+.title-block select, .title-block input {
+    margin-bottom: 10px;
+}
+select {
+    padding: 7px 0;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #666;
+    }
+select, table {
+    width: 150px;
+}
+option {
+    background: #fff;
+}
+.dateinput{
+    width: 150px;
+}
+.day-visited i, .time-visited i, input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 8px;
+    font-size: 20px;
+}
+.day-visited i, .time-visited i {
+    right: 5px;
+    z-index: 1;
+    color: #a9a9a9;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.question-answer label {
+    display: block;
+    padding: 0 20px 10px 0;
+}
+.question-answer input {
+    width: auto;
+    margin-top: -2px;
+}
+#button {
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    background-color: #095484;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+    button:hover {
+    background-color: #0666a3;
+}
+
+.names{
+    grid-area: nombreyapellido;
+}
+.genero{
+    grid-area: inputGe;
+}
+.nombre{
+    grid-area: inputNo;
+}
+.apellido{
+    grid-area: inputAp;
+    margin-bottom: 10px;
+}
+.date{
+    grid-area: fechayhorario;
+}
+.fecha{
+    grid-area: inputFe;
+}
+.horario{
+    grid-area: inputHo;
+    margin-bottom: 10px;
+}
+.obrasocial{
+    grid-area: obrasocial;
+}
+.OS{
+    grid-area: inputOS;
+    margin-bottom: 10px;
+}
+.notificacion{
+    grid-area: notificacion;
+}
+.telefono{
+    grid-area: inputTe;
+}
+.email{
+    grid-area: inputEm;
+    margin-bottom: 15px;
+}
+.boton{
+    grid-area: boton;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+/*Media Sizes*/
+@media(min-width:550px){
+    .title{
+        font-size: 24px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .text1{
+        font-size: 16px;
+        margin: 0px 5% 20px 5%;
+    }
+    .text2{
+        font-size: 16px;
+        margin: 0px 5% 20px 5%;
+    }
+}
+
+@media(min-width:400px){
+    .formContainer{
+        width: 364px;
+    }
+    .formulario{
+        grid-template-rows: 30px 40px 40px 40px 30px 40px 30px 40px 30px 40px 40px 60px;
+        grid-template-columns: 170px 170px auto auto;
+        grid-template-areas: "nombreyapellido nombreyapellido nombreyapellido nombreyapellido"
+                             "inputGe         inputGe         inputGe         inputGe"
+                             "inputNo         inputNo         inputNo         inputNo"
+                             "inputAp         inputAp         inputAp         inputAp"
+                             "fechayhorario   fechayhorario   fechayhorario   fechayhorario"
+                             "inputFe         inputHo         none            none"
+                             "obrasocial      obrasocial      obrasocial      obrasocial"
+                             "inputOS         inputOS         inputOS         inputOS"
+                             "notificacion    notificacion    notificacion    notificacion"
+                             "inputTe         inputTe         inputTe         inputTe"
+                             "inputEm         inputEm         inputEm         inputEm"
+                             "boton           boton           boton           boton";
+    }
+    .formContainer{
+        display: flex;
+        align-items: center;
+    }
+    #button{
+        margin-top: 20px;
+    }
+    .boton{
+        margin-right: 10px;
+    }
+    
+    .horarioInput{
+        margin: 0;
+    }
+}
+@media(min-width:768px){
+    .mainContainer{
+        column-gap: 2%;
+        grid-template-areas: "turnosInfo form";
+        padding-right: 20px;
+    }    
+}
+@media(min-width:1024px){
+    body{
+        grid-template-rows: 63px 582px 20px;
+    }
+    .mainContainer{
+        padding: 1% 10% 4% 10%;
+        height: 100%;
+    }
+    .formContainer{
+        display: flex;
+        align-items: center;
+    }
+    .turnosInfo{
+        margin: 6% 20px 0px 20px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .text1{
+        margin: 0px;
+    }
+    .text2{
+        margin: 0px;
+    }
+}

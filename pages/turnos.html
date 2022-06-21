@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/8173b4561c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/unknown.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/turnos.css">
+
+    <title>Turnos Online</title>
+</head>
+<body>
+    <!--Nav Bar Area-->
+    <nav class="nav">
+        <div id="logoArea"><img id="logo" src="../assets/unknown.png" alt="logo"></div>
+        <div id="titleArea"><h1 id="title">Laboratorio de Análisis Clínicos</h1></div>
+        <div class="navButtonArea">
+            <div class="simpleNavContainer">
+                <a href="../index.html"class="navButtonContainer">
+                    <div>Inicio</div>
+                </a>
+            </div>
+            <div class="simpleNavContainer">
+                <a href="../index.html" class="navButtonContainer">
+                    <div>Contacto</div>
+                </a>
+            </div>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Portal del Paciente <i class="fa fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="turnos.html">Turnos</a>
+                  <a href="indicaciones.html">Indicaciones</a>
+                  <a href="obrassociales.html">Obras Sociales</a>
+                  <a href="disclaimer.html">Disclaimer</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <main>
+      <div class="mainContainer">
+        <div class="turnosInfo">
+          <h2 class="title">Turnos Online</h2>
+          <p class="text1">
+            Mediante el siguiente formulario usted debera seleccionar la <strong>fecha</strong> y <strong>horario</strong> en el cual se presentara en el laboratorio. De la misma manera también puede indicar un <strong>medio de contacto</strong> por el cual ser notificado sobre el <strong>estado de sus estudios</strong>.
+          </p>
+          <p class="text2">
+            Ponemos a disposición de todos los pacientes el servicio de <strong>extracciones a domicilio</strong>, el cual permite que aquellos que se encuentren imposibilitados de trasladarse puedan tener acceso a un servicio de calidad cómodamente en su casa, indispensable para el control de su salud. Además, se convierte en una opción para los pacientes que, por elección, prefieran la intimidad de su hogar a la hora de realizar la toma de una muestra.
+          </p>
+        </div>
+
+        <div class="formContainer">
+          <div class="turnosForm">
+            <form class="formulario">
+              <p class="names">Nombre y Apellido<span>*</span></p>
+              <div class="genero title-block">
+                <select>
+                  <option value="title" selected>--Genero--</option>
+                  <option value="h">Hombre</option>
+                  <option value="m">Mujer</option>
+                  <option value="ht">Hombre Trans</option>
+                  <option value="mt">Mujer Trans</option>
+                  <option value="nb">No Binario</option>
+                </select>
+              </div>
+              <div class="nombre">
+                <input type="text" name="name" placeholder="Nombre" />
+              </div>
+              <div class="apellido">
+                <input type="text" name="name" placeholder="Apellido" />
+              </div>
+              <div class="date">Fecha y Horario<span>*</span></div>
+              <div class="fecha">
+                <input class="dateinput" type="date" name="" id="fecha">
+              </div>
+              <div class="horario">
+                <select class="horarioInput" name="" id="">
+                  <option value="default">7:30 a 8:00hs AM</option>
+                  <option value="default">8:00 a 8:30hs AM</option>
+                  <option value="default">8:30 a 9:00hs AM</option>
+                  <option value="default">9:00 a 9:30hs AM</option>
+                  <option value="default">9:30 a 10:00hs AM</option>
+                  <option value="default">11:00 a 11:30hs AM</option>
+                  <option value="default">11:30 a 12:00hs AM</option>
+                  <option value="default">12:00 a 12:30hs PM</option>
+              </select>
+              </div>
+              <div class="obrasocial">Obra Social<span>*</span></div>
+              <div class="OS">
+                <select>
+                  <option value=""></option>
+                  <option value="1">Ioma</option>
+                  <option value="2">Osecac</option>
+                  <option value="3">Ospe</option>
+                  <option value="4">Plan MAMI</option>
+                </select>
+              </div>
+              <div class="notificacion">Medio de Notificación<span>*</span></div>
+              <div class="telefono">
+                <input type="tel" name="" id="" placeholder="Teléfono">
+              </div>
+              <div class="email">
+                <input type="email" name="" id="" placeholder="Email">
+              </div>
+              <div class="boton">
+                <button id="button" type="submit" href="#">Enviar Formulario</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <div id="copyright">© Copyright - 2022</div>
+    </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
