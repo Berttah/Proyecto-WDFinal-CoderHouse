@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/disclaimer.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Disclaimer</title>
 </head>
 <body>
@@ -45,15 +47,15 @@
     <!--Main Area-->
     <main>
       <div class="mainContainer">
-        <h2 class="disclaimerTitle">Disclaimer</h2>
-        <h3 class="firstSubtitle">Website Disclaimer</h3>
-        <div class="firstDisclaimer">
+        <h2 class="disclaimerTitle" data-aos="fade-left">Disclaimer</h2>
+        <h3 class="firstSubtitle" data-aos="fade-up">Website Disclaimer</h3>
+        <div class="firstDisclaimer" data-aos="fade-right">
           <p>La información provista por la página Laboratorio de Análisis Clínicos ******** es solo para fines informativos generales.</p>
           <br>
           <p>Toda la información del sitio es provista en buena fé, sin embargo, no hacemos ninguna representación ni garantía de ningún tipo, expresa o implícita, con respecto a la precisión, adecuación, validez, confiabilidad, disponibilidad o integridad de cualquier información en el sitio.</p>
         </div>
-        <h3 class="secondSubtitle">Professional Disclaimer</h3>
-        <div class="secondDisclaimer">
+        <h3 class="secondSubtitle" data-aos="fade-up">Professional Disclaimer</h3>
+        <div class="secondDisclaimer" data-aos="fade-right">
           <p>El sitio no puede y no contiene consejos médicos o de salud. La información médica o de salud se proporciona únicamente con fines informativos y educativos generales y no reemplaza el asesoramiento profesional. En consecuencia, antes de tomar cualquier acción basada en dicha información, le recomendamos que consulte con los profesionales apropiados.</p>
         </div>
       </div>
@@ -84,6 +86,11 @@
             }
           }
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 </body>
 </html>

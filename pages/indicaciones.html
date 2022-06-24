@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/indicaciones.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Indicaciones</title>
 </head>
 <body>
@@ -43,9 +45,9 @@
     </nav>
 
     <div class="mainContainer">
-      <h2 class="title">Indicaciones para Estudios Clínicos</h2>
-      <h3 class="subtitle subtitle1">Indicaciones Generales</h3>
-      <div class="text1">
+      <h2 class="title" data-aos="fade-left">Indicaciones para Estudios Clínicos</h2>
+      <h3 class="subtitle subtitle1" data-aos="fade-up">Indicaciones Generales</h3>
+      <div class="text1" data-aos="fade-right">
         <p>
           Cada estudio implica una preparación en particular, y en algunos casos, un horario especial. Esta información la debe solicitar Ud. al laboratorio (tiene a su disposición los siguientes <a href="../index.html"><strong> medios de contacto</strong></a>). Un ejemplos notable son las horas de ayuno requeridas.
         </p>
@@ -54,8 +56,8 @@
           Prepararse de manera adecuada es importante para que el resultado sea confiable  Si no se cumplen las pautas, los resultados pueden ser incorrectos o dudosos, o no se podrá realizar el análisis.
         </p> 
       </div>
-      <h3 class="subtitle subtitle2">Antes de la Extracción</h3>
-      <div class="text2">
+      <h3 class="subtitle subtitle2" data-aos="fade-up">Antes de la Extracción</h3>
+      <div class="text2" data-aos="fade-right">
         <p>
           Las siguientes indicaciones son prácticas generales para cualquier extracción sanguinea:</p>
         <p id="indicaciones">
@@ -68,22 +70,10 @@
       </div>
     </div>
     
-    <!--
-      <h2 style="margin-left: -20%;">Indicaciones de Preparación a Estudios Clínicos</h2>
-            <div>
-                <h3>Recomendaciones Generales</h3>
-                <p class="discText p-francesa">Cada estudio implica una preparación en particular, y en algunos casos, un horario especial. Esta información la debe solicitar Ud. al laboratorio (tiene a su disposición los siguientes <a href="./contacto.html"><strong> medios de contacto</strong></a>). Un ejemplos notable son las horas de ayuno requeridas.</p>
-                <p class="discText p-francesa">Prepararse de manera adecuada es importante para que el resultado sea confiable  Si no se cumplen las pautas, los resultados pueden ser incorrectos o dudosos, o no se podrá realizar el análisis.</p>
-                <h3>Antes de la Extracción</h3>
-                <p class="discText p-francesa">Las siguientes indicaciones son prácticas generales para cualquier extracción sanguinea:<br>Sólo beber agua<br>No fumar ni mascar chicles<br>Reducir al minimo la actividad física realizada<br>Evitar situaciones de estrés</p>
-                <br>
-                <p class="discText p-francesa">Es necesario, además, no haberse sometido a estudios por imagenes con contraste endovenoso dentro de las 72hs previas al estudio.</p>
-            </div>
-    -->
     <!--Footer-->
     <footer class="footer">
       <div id="copyright">© Copyright - 2022</div>
-  </footer>
+    </footer>
     
     <script>
         /* When the user clicks on the button, 
@@ -105,6 +95,11 @@
             }
           }
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

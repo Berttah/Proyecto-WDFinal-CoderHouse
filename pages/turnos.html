@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/turnos.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Turnos Online</title>
 </head>
 <body>
@@ -45,16 +47,16 @@
     <main>
       <div class="mainContainer">
         <div class="turnosInfo">
-          <h2 class="title">Turnos Online</h2>
-          <p class="text1">
+          <h2 class="title" data-aos="fade-left">Turnos Online</h2>
+          <p class="text1" data-aos="fade-right">
             Mediante el siguiente formulario usted debera seleccionar la <strong>fecha</strong> y <strong>horario</strong> en el cual se presentara en el laboratorio. De la misma manera también puede indicar un <strong>medio de contacto</strong> por el cual ser notificado sobre el <strong>estado de sus estudios</strong>.
           </p>
-          <p class="text2">
+          <p class="text2" data-aos="fade-right">
             Ponemos a disposición de todos los pacientes el servicio de <strong>extracciones a domicilio</strong>, el cual permite que aquellos que se encuentren imposibilitados de trasladarse puedan tener acceso a un servicio de calidad cómodamente en su casa, indispensable para el control de su salud. Además, se convierte en una opción para los pacientes que, por elección, prefieran la intimidad de su hogar a la hora de realizar la toma de una muestra.
           </p>
         </div>
 
-        <div class="formContainer">
+        <div class="formContainer" data-aos="fade-left">
           <div class="turnosForm">
             <form class="formulario">
               <p class="names">Nombre y Apellido<span>*</span></p>
@@ -141,6 +143,11 @@
             }
           }
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
