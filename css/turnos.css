@@ -5,6 +5,7 @@ body{
                          "info"
                          "footer";
     background-color: #DAFFFF;
+    overflow-x: hidden;
 }
 
 /*Main Area*/
