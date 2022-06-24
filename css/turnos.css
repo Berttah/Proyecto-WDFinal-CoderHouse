@@ -5,6 +5,7 @@ body{
                          "info"
                          "footer";
     background-color: #DAFFFF;
+    overflow-x: hidden;
 }
 
 /*Main Area*/
@@ -195,6 +196,7 @@ option {
 }
 
 /*Media Sizes*/
+
 @media(min-width:550px){
     .title{
         font-size: 24px;
