@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/8173b4561c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Icon-->
+    <link rel="icon" type="image/x-icon" href="./assets/unknown.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/globalBS.css">
+    <link rel="stylesheet" href="./css/indexBS.css">
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Laboratorio de Análisis Clínicos</title>
+</head>
+
+<body class="container-fluid m-0 p-0">
+    <!--Nav Bar Area-->
+    <nav class="navbar navbar-expand-lg navBoots">
+        <div class="container-fluid">
+            <a class="col-1 navbar-brand p-0 m-0 d-flex justify-content-center" href="./indexBS.html">
+                <img class="logo" src="./assets/unknown.png" alt="logo">
+            </a>
+
+            <div class="col-7 titleZone text-center">
+                <h1 class="title" style="margin:0px;">Laboratorio de Análisis Clínicos</h1>
+            </div>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="col-2 justify-content-end collapse navbar-collapse pe-3 dropbttns" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="navButton">
+                        <a style="padding-right: 20px;padding-left: 20px;" class="nav-link" aria-current="page" href="./indexBS.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown" id="navButton">
+                        <a style="padding-right: 20px;padding-left: 20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portal del Paciente
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#aboutInfoDisplay">Contacto</a></li>
+                            <li><a class="dropdown-item" href="./pages/turnosBS.html">Turnos</a></li>
+                            <li><a class="dropdown-item" href="./pages/indicacionesBS.html">Indicaciones</a></li>
+                            <li><a class="dropdown-item" href="./pages/obrassocialesBS.html">Obras Sociales</a></li>
+                            <li><a class="dropdown-item" href="./pages/disclaimerBS.html">Disclaimer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Portada Area-->
+    <div class="row m-0 p-0 justify-content-around" id="portada">
+        <img src="./assets/lab-space-desks.jpg" alt="portada">
+    </div>
+    
+    <!--Info Area-->
+    <div class="row m-0 p-3 info">
+
+        <div class="row col-12 col-sm-6 col-lg-8 m-0 p-0 contacto" id="aboutUs" data-aos="fade-up">
+            
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center" style="height: 141px;">
+                <div class="infoTitle py-3 m-auto">Información de Contacto</div>
+                <div class="py-2 px0 m-auto" id="aboutInfoDisplay">
+                    <div><p>Dirección: Av 7 y *** Villa Elvira</p></div>
+                    <div><p>Teléfono: 221 486-****</p></div>
+                    <div><p>Email: laboratorio***@gmail.com</p></div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="col-12 m-0 py-3 d-flex justify-content-center mapa" data-aos="fade-up">
+                    <iframe class="col-9 p-0" id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26161.93099045499!2d-57.91288039253439!3d-34.950558462757435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2ee7c614da9fd%3A0xce70b91559c863dc!2sVilla%20Elvira%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653450541092!5m2!1ses!2sar" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-lg-4 m-0 pb-3 d-flex justify-content-center">
+            <div class="horario" data-aos="fade-up">
+                <div class="py-3 infoTitle">Horarios de Atención</div>
+                <div id="horariosDisplay">
+                    <div><p>Lunes de 7:30 a 13:00hs</p></div>
+                    <div><p>Martes de 7:30 a 13:00hs</p></div>
+                    <div><p>Miércoles de 8:00 a 13:30hs</p></div>
+                    <div><p>Jueves de 7:30 a 13:00hs</p></div>
+                    <div><p>Viernes de 7:30 a 13:00hs</p></div>
+                    <div><p>Sabado de 8:00 a 12:00hs</p></div>
+                    <div><p>Domingo (<span style="color: #BA1102">Cerrado</span>)</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 turno">
+            <div class="p-3 infoTitle">Pedí tu Turno</div>
+            <div id="textTurnoIndex"><p>Ahora podes pedir tu turno mediante nuestro formulario online:</p></div>
+            <div id="redireccionTurnos"><a href="./pages/turnosBS.html">Turnos Online</a></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="row m-0 p-0 d-flex justify-content-center footer">
+        <div id="copyright">© Copyright - 2022</div>
+    </footer>
+    
+    <!--Scripts-->
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Overpass&family=Pacifico&family=Poppins:wght@500&display=swap');
+/*General Stuff*/
+*{
+    font-family: Poppins;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+/*NavBar*/
+.navBoots{
+    padding: 0px;
+    background-color: #DAFFFF;
+    border-bottom: 3px solid #4C84A1;
+}
+.logo{
+    width: 70px;
+}
+.title{
+    padding: 0px 10px;
+    font-size: xx-large!important;
+}
+.dropbttns{
+    font-size: large!important;
+}
+.nav-link{
+    color: black;
+}
+.nav-item .nav-link{
+    padding: 22px 0px;
+}
+.dropbttns ul li :hover{
+    background-color: #4C84A1;
+    color: white;
+}
+.dropdown-menu{
+    background-color: #ECFFFF;
+    border: 2px solid #4C84A1;
+    border-radius: 0px 0px 8px 8px;
+    min-width: 229.28px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 18px;
+}
+.dropdown-item{
+    padding: 2.5px 30px;
+}
+#navbarNavDropdown ul li ul li a:hover{
+    background-color: #5BA0C2;
+    color: white;
+}
+
+
+
+/*Footer*/
+.footer{
+    background-color: #4C84A1;
+    color: white;
+    grid-area: footer;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*Breakpoints*/
+@media(max-width:480px){
+    .title{
+        font-size: x-large!important;
+    }
+    .logo{
+        width: 50px;
+    }
+}
+@media(max-width:380px){
+
+    .title{
+        font-size: large!important;
+    }
+    .logo{
+        width: 40px;
+    }
+}
