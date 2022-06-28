@@ -1,9 +1,4 @@
 body{
-    display: grid;
-    grid-template-rows: auto auto 20px;
-    grid-template-areas: "nav"
-                         "info"
-                         "footer";
     background-color: #DAFFFF;
     overflow-x: hidden;
 }
@@ -11,43 +6,23 @@ body{
 /*Main Area*/
 .mainContainer{
     background-color: #F2FFFF;
-    display: grid;
-    grid-template-areas: "turnosInfo"
-                         "form";
     color: #666;
-    justify-items: center;
 }
-.turnosInfo{
-    margin: 20px 20px 0px 20px;
-    display: grid;
-    grid-template-areas: "title"
-                         "text1"
-                         "text2"
-                         "form";
-}
-
 .title{
-    grid-area: title;
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .text1{
-    grid-area: text1;
     font-size: 14px;
     margin-bottom: 10px;
 }
 .text2{
-    grid-area: text2;
     font-size: 14px;
 }
 
 /*Form Zone*/
-.formContainer{
-    grid-area: form;
-    width: 90%;
-}
 .turnosForm{
     margin: 20px 0 20px 0;
     padding: 5px;
@@ -195,6 +170,7 @@ option {
     justify-content: end;
 }
 
+
 /*Media Sizes*/
 
 @media(min-width:550px){
@@ -215,9 +191,6 @@ option {
 }
 
 @media(min-width:400px){
-    .formContainer{
-        width: 364px;
-    }
     .formulario{
         grid-template-rows: 30px 40px 40px 40px 30px 40px 30px 40px 30px 40px 40px 60px;
         grid-template-columns: 170px 170px auto auto;
@@ -244,25 +217,14 @@ option {
     .boton{
         margin-right: 10px;
     }
-    
     .horarioInput{
         margin: 0;
     }
 }
-@media(min-width:768px){
-    .mainContainer{
-        column-gap: 2%;
-        grid-template-areas: "turnosInfo form";
-        padding-right: 20px;
-    }    
-}
 @media(min-width:1024px){
-    body{
-        grid-template-rows: 63px 582px 20px;
-    }
     .mainContainer{
         padding: 1% 10% 4% 10%;
-        height: 100%;
+        min-height: 576px;
     }
     .formContainer{
         display: flex;
