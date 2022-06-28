@@ -58,8 +58,6 @@ ul{
     color: white;
 }
 
-
-
 /*Footer*/
 .footer{
     background-color: #4C84A1;
@@ -67,6 +65,20 @@ ul{
     grid-area: footer;
     font-size: 10px;
     text-align: center;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #C3E6E6;
+}
+::-webkit-scrollbar-thumb {
+    background: #5FA6C9;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #518AC2;
 }
 
 /*Breakpoints*/
