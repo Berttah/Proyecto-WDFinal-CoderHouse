@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Overpass&family=Pacifico&family=Poppins:wght@500&display=swap");
+/*General Stuff*/
+* {
+  font-family: Poppins;
+}
+
+body {
+  background-color: #F2FFFF;
+  overflow-x: hidden;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #C3E6E6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5FA6C9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #518AC2;
+}
+
+/*NavBar*/
+.navBoots {
+  padding: 0px 0px;
+  background-color: #DAFFFF;
+  border-bottom: 3px solid #4C84A1;
+}
+.navBoots .logo {
+  padding: 5px;
+  width: 70px;
+}
+.navBoots .title {
+  padding: 5px;
+  font-size: xx-large;
+}
+.navBoots .dropbttns {
+  font-size: large;
+}
+.navBoots .dropbttns .dropdown-menu {
+  background-color: #ECFFFF;
+  border: 2px solid #4C84A1;
+  border-radius: 0px 0px 8px 8px;
+  min-width: 229.28px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+.navBoots .dropbttns .dropdown-menu .dropdown-item {
+  padding: 2.5px 30px;
+}
+.navBoots .dropbttns .nav-item .nav-link {
+  padding: 22px 0px;
+  color: black;
+}
+.navBoots .dropbttns .nav-item a:hover {
+  background-color: #4C84A1;
+  color: white;
+}
+
+#navbarNavDropdown ul li ul li a:hover {
+  background-color: #5BA0C2;
+  color: white;
+}
+
+/*Breakpoints*/
+@media (max-width: 480px) {
+  .title {
+    font-size: x-large !important;
+  }
+
+  .logo {
+    width: 50px !important;
+  }
+}
+@media (max-width: 380px) {
+  .title {
+    font-size: large !important;
+  }
+}
+/*Footer*/
+.footer {
+  background-color: #4C84A1;
+  color: white;
+  grid-area: footer;
+  font-size: 10px;
+  text-align: center;
+}
+
+/*Index Page*/
+/*Portada Area*/
+#portada {
+  width: 100%;
+  height: 180px;
+  border-bottom: 3px solid #4C84A1;
+}
+#portada img {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+/*Info Area*/
+.info {
+  color: #666;
+}
+.info .infoTitle {
+  font-size: 20px;
+  text-align: center;
+}
+.info .contacto {
+  font-size: 14px;
+}
+.info .contacto #aboutInfoDisplay {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.info .mapa {
+  padding-bottom: 15px;
+}
+.info .mapa #mapa {
+  border: 3px solid #4C84A1;
+  border-radius: 8px;
+  max-width: 80%;
+}
+.info .horario {
+  border-top: 2px solid #C3E6E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.info .turno {
+  border-top: 2px solid #C3E6E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.info .turno #textTurnoIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+/*Breakpoints*/
+@media (min-width: 550px) {
+  #portada {
+    height: 250px;
+  }
+}
+@media (min-width: 576px) {
+  .info .horario {
+    border-top: none;
+  }
+}
+@media (min-width: 768px) {
+  #portada {
+    height: 280px;
+  }
+
+  .infoTitle {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  #portada {
+    height: 350px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+}
+/*Turnos Page*/
+/*Main Area*/
+.mainContainer {
+  color: #666;
+}
+.mainContainer .titleTurnos {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mainContainer .textTurnos1 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.mainContainer .textTurnos2 {
+  font-size: 14px;
+}
+
+/*Form Zone*/
+.turnosForm {
+  margin: 20px 0 20px 0;
+  padding: 5px;
+  border: 2px solid #4C84A1;
+  background-color: white;
+  border-radius: 8px;
+  height: fit-content;
+}
+.turnosForm span {
+  color: red;
+}
+.turnosForm .formulario {
+  padding: 5px;
+  display: grid;
+  grid-template-areas: "nombreyapellido" "inputGe" "inputNo" "inputAp" "fechayhorario" "inputFe" "inputHo" "obrasocial" "inputOS" "notificacion" "inputTe" "inputEm" "boton";
+}
+.turnosForm .formulario .names {
+  grid-area: nombreyapellido;
+}
+.turnosForm .formulario .genero {
+  grid-area: inputGe;
+}
+.turnosForm .formulario .nombre {
+  grid-area: inputNo;
+}
+.turnosForm .formulario .apellido {
+  grid-area: inputAp;
+  margin-bottom: 10px;
+}
+.turnosForm .formulario .date {
+  grid-area: fechayhorario;
+}
+.turnosForm .formulario .fecha {
+  grid-area: inputFe;
+}
+.turnosForm .formulario .horario {
+  grid-area: inputHo;
+  margin-bottom: 10px;
+}
+.turnosForm .formulario .obrasocial {
+  grid-area: obrasocial;
+}
+.turnosForm .formulario .OS {
+  grid-area: inputOS;
+  margin-bottom: 10px;
+}
+.turnosForm .formulario .notificacion {
+  grid-area: notificacion;
+}
+.turnosForm .formulario .telefono {
+  grid-area: inputTe;
+}
+.turnosForm .formulario .email {
+  grid-area: inputEm;
+  margin-bottom: 15px;
+}
+.turnosForm .formulario .boton {
+  grid-area: boton;
+  display: flex;
+  justify-content: end;
+}
+.turnosForm .formulario .boton #button {
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #095484;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.turnosForm .formulario .boton #button:hover {
+  background-color: #0666a3;
+}
+
+input {
+  width: calc(100% - 20px);
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+  color: #666;
+}
+
+input:hover, textarea:hover, select:hover {
+  outline: none;
+  border: 1px solid #095484;
+  background: #e6eef7;
+}
+
+.title-block select, .title-block input {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 7px 0;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #666;
+}
+select table {
+  width: 150px;
+}
+
+option {
+  background: #fff;
+}
+
+.dateinput {
+  width: 150px;
+}
+
+.day-visited i, .time-visited i, input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+}
+
+.day-visited i, .time-visited i {
+  right: 5px;
+  z-index: 1;
+  color: #a9a9a9;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.question-answer label {
+  display: block;
+  padding: 0 20px 10px 0;
+}
+
+.question-answer input {
+  width: auto;
+  margin-top: -2px;
+}
+
+/*Breakpoints*/
+@media (min-width: 550px) {
+  .mainContainer .textTurnos1 {
+    font-size: 24px;
+  }
+  .mainContainer .textTurnos1 {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+  .mainContainer .textTurnos2 {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+}
+@media (min-width: 400px) {
+  .turnosForm .formulario {
+    grid-template-rows: 30px 40px 40px 40px 30px 40px 30px 40px 30px 40px 40px 60px;
+    grid-template-columns: 170px 170px auto auto;
+    grid-template-areas: "nombreyapellido nombreyapellido nombreyapellido nombreyapellido" "inputGe         inputGe         inputGe         inputGe" "inputNo         inputNo         inputNo         inputNo" "inputAp         inputAp         inputAp         inputAp" "fechayhorario   fechayhorario   fechayhorario   fechayhorario" "inputFe         inputHo         none            none" "obrasocial      obrasocial      obrasocial      obrasocial" "inputOS         inputOS         inputOS         inputOS" "notificacion    notificacion    notificacion    notificacion" "inputTe         inputTe         inputTe         inputTe" "inputEm         inputEm         inputEm         inputEm" "boton           boton           boton           boton";
+  }
+
+  .formContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  #button {
+    margin-top: 20px;
+  }
+
+  .boton {
+    margin-right: 10px;
+  }
+
+  .horarioInput {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .mainContainer {
+    padding: 1% 10% 4% 10%;
+    min-height: 576px;
+  }
+  .mainContainer .turnosInfo {
+    margin: 6% 20px 0px 20px;
+  }
+  .mainContainer .turnosInfo .titleTurnos {
+    font-size: 28px;
+  }
+  .mainContainer .turnosInfo .textTurnos1 {
+    margin: 0px;
+  }
+  .mainContainer .turnosInfo .textTurnos2 {
+    margin: 0px;
+  }
+  .mainContainer .formContainer {
+    display: flex;
+    align-items: center;
+  }
+}
+/*Indicaciones Page*/
+/*Main Area*/
+.mainContainer {
+  background-color: #F2FFFF;
+  color: #666;
+}
+.mainContainer .titleSubpage {
+  text-align: center;
+  font-size: 20px;
+}
+.mainContainer .subtitleIndicaciones {
+  text-align: center;
+  font-size: 16px;
+}
+.mainContainer .textIndicaciones1 {
+  font-size: 14px;
+}
+.mainContainer .textIndicaciones2 {
+  font-size: 14px;
+}
+.mainContainer #indicaciones {
+  padding-left: 20px;
+}
+
+/*Media Sizes*/
+@media (min-width: 550px) {
+  .mainContainer .titleSubpage {
+    font-size: 24px;
+  }
+  .mainContainer .subtitleIndicaciones {
+    font-size: 20px;
+  }
+  .mainContainer .textIndicaciones1 {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+  .mainContainer .textIndicaciones2 {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    height: 576px;
+  }
+
+  .mainContainer {
+    padding: 1% 10% 4% 10%;
+    height: 100%;
+  }
+  .mainContainer .titleSubpage {
+    font-size: 28px;
+  }
+}
+/*Obras Sociales Page*/
+/*Main Area*/
+.mainContainer {
+  background-color: #F2FFFF;
+  color: #666;
+}
+.mainContainer .titleOS {
+  text-align: center;
+  font-size: 20px;
+}
+.mainContainer .subtitleOS {
+  text-align: center;
+  font-size: 16px;
+}
+.mainContainer .textOS {
+  font-size: 14px;
+}
+.mainContainer #toFaba {
+  width: fit-content;
+  background-color: #DAFFFF;
+  font-size: 14px;
+  border: 2px solid #4C84A1;
+  padding: 10px;
+  border-radius: 8px;
+  color: black;
+}
+.mainContainer #toFaba:hover {
+  background-color: #5ED7E0;
+}
+
+/*Breakpoints*/
+@media (min-width: 550px) {
+  .mainContainer .titleOS {
+    font-size: 24px;
+  }
+  .mainContainer .subtitleOS {
+    font-size: 20px;
+  }
+  .mainContainer .textOS {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+}
+@media (min-width: 590px) {
+  .mainContainer .text2OS {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    height: 576px;
+  }
+
+  .mainContainer {
+    padding: 1% 10% 4% 10%;
+    height: 100%;
+  }
+  .mainContainer .titleOS {
+    font-size: 28px;
+  }
+  .mainContainer .textOS {
+    margin: 0px;
+  }
+}
+/*Disclaimer Page*/
+/*Main Area*/
+.mainContainer {
+  background-color: #F2FFFF;
+  color: #666;
+}
+.mainContainer .subtitleDisclaimer {
+  font-size: 16px;
+}
+.mainContainer .firstDisclaimer {
+  font-size: 14px;
+}
+.mainContainer .secondDisclaimer {
+  font-size: 14px;
+}
+
+/*Media Sizes*/
+@media (min-width: 550px) {
+  .mainContainer .titleDisclaimer {
+    font-size: 24px;
+  }
+  .mainContainer .subtitleDisclaimer {
+    font-size: 20px;
+  }
+  .mainContainer .firstDisclaimer {
+    font-size: 16px;
+    margin: 0px 5% 20px 5%;
+  }
+  .mainContainer .secondDisclaimer {
+    font-size: 16px;
+    margin: 0px 5% 40px 5%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    height: 576px;
+  }
+
+  .mainContainer {
+    padding: 1% 10% 4% 10%;
+    height: 100%;
+  }
+  .mainContainer .titleDisclaimer {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=style.css.map */

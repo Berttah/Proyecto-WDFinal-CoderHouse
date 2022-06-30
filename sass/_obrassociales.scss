@@ -1,0 +1,68 @@
+/*Obras Sociales Page*/
+/*Main Area*/
+.mainContainer{
+    background-color: #F2FFFF;
+    color: #666;
+    .titleOS{
+        text-align: center;
+        font-size: 20px;
+    }
+    .subtitleOS{
+        text-align: center;
+        font-size: 16px;
+    }
+    .textOS{
+        font-size: 14px;
+    }
+    #toFaba {
+        width: fit-content;
+        background-color: #DAFFFF;
+        font-size: 14px;
+        border: 2px solid #4C84A1;
+        padding: 10px;
+        border-radius: 8px;
+        color: black;
+        &:hover{
+            background-color: #5ED7E0;
+        }
+    }
+}
+
+/*Breakpoints*/
+@media(min-width:550px){
+    .mainContainer{
+        .titleOS{
+            font-size: 24px;
+        }
+        .subtitleOS{
+            font-size: 20px;
+        }
+        .textOS{
+            font-size: 16px;
+            margin: 0px 5% 20px 5%;
+        }
+    }
+}
+
+@media(min-width:590px){
+    .mainContainer{
+        .text2OS{
+            text-align: center;
+        }
+    }
+}
+@media(min-width:1024px){
+    body{
+        height: 576px;
+    }
+    .mainContainer{
+        padding: 1% 10% 4% 10%;
+        height: 100%;
+        .titleOS{
+            font-size: 28px;
+        }
+        .textOS{
+            margin: 0px;
+        }
+    }
+}

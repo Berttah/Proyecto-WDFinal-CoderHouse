@@ -1,0 +1,56 @@
+/*Indicaciones Page*/
+/*Main Area*/
+.mainContainer{
+    background-color: #F2FFFF;
+    color: #666;
+    .titleSubpage{
+        text-align: center;
+        font-size: 20px;
+    }
+    .subtitleIndicaciones{
+        text-align: center;
+        font-size: 16px;
+    }
+    .textIndicaciones1{
+        font-size: 14px;
+    }
+    .textIndicaciones2{
+        font-size: 14px;
+    }
+    #indicaciones{
+        padding-left: 20px;
+    }
+}
+
+/*Media Sizes*/
+@media(min-width:550px){
+    .mainContainer{
+        .titleSubpage{
+            font-size: 24px;
+        }
+        .subtitleIndicaciones{
+            font-size: 20px;
+        }
+        .textIndicaciones1{
+            font-size: 16px;
+            margin: 0px 5% 20px 5%;
+        }
+        .textIndicaciones2{
+            font-size: 16px;
+            margin: 0px 5% 20px 5%;
+        }
+    }
+}
+@media(min-width:1024px){
+    body{
+        height: 576px;
+    }
+    .mainContainer{
+        padding: 1% 10% 4% 10%;
+        height: 100%;
+        .titleSubpage{
+            font-size: 28px;
+        }
+    }
+    
+}
