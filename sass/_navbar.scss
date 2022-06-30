@@ -1,0 +1,71 @@
+/*NavBar*/
+.navBoots{
+    padding: 0px 0px;
+    background-color: #DAFFFF;
+    border-bottom: 3px solid #4C84A1;
+    .logo{
+        padding: 5px;
+        width: 70px;
+    }
+    .title{
+        padding: 5px;
+        font-size: xx-large;
+    }
+    .dropbttns{
+        font-size: large;
+        .dropdown-menu{
+            background-color: #ECFFFF;
+            border: 2px solid #4C84A1;
+            border-radius: 0px 0px 8px 8px;
+            min-width: 229.28px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            font-size: 18px;
+            .dropdown-item{
+                padding: 2.5px 30px;
+            }
+        }
+        .nav-item{
+            .nav-link{
+                padding: 22px 0px;
+                color: black;
+            } 
+            a{
+                &:hover{
+                    background-color: #4C84A1;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+#navbarNavDropdown{
+    ul{
+        li{
+            ul{
+                li{
+                    a{
+                        &:hover{
+                            background-color: #5BA0C2;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Breakpoints*/
+@media(max-width:480px){
+    .title{
+        font-size: x-large!important;
+    }
+    .logo{
+        width: 50px!important;
+    }
+}
+@media(max-width:380px){
+    .title{
+        font-size: large!important;
+    }
+}
