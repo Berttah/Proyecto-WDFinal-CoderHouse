@@ -5,7 +5,7 @@
     font-family: Poppins;
 }
 body{
-    background-color: #F2FFFF;
+    background-color: $colorBody;
     overflow-x: hidden;
 }
 p{
@@ -26,11 +26,11 @@ ul{
     width: 5px;
 }
 ::-webkit-scrollbar-track {
-    background: #C3E6E6;
+    background: $colorScrollBarTrack;
 }
 ::-webkit-scrollbar-thumb {
-    background: #5FA6C9;
+    background: $colorScrollBarThumb;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #518AC2;
+    background: $colorScrollBarThumbHover;
 }

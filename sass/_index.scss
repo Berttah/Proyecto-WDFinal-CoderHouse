@@ -3,7 +3,7 @@
 #portada{
     width: 100%;
     height: 180px;
-    border-bottom: 3px solid #4C84A1;
+    border-bottom: 3px solid $colorHighlights;
     img{
         height: 100%;
         width: 100%;
@@ -13,7 +13,7 @@
 
 /*Info Area*/
 .info{
-    color: #666;
+    color: $colorText;
     .infoTitle{
         font-size: 20px;
         text-align: center;
@@ -29,20 +29,20 @@
     .mapa{
         padding-bottom: 15px;
         #mapa{
-            border: 3px solid #4C84A1;
+            border: 3px solid $colorHighlights;
             border-radius: 8px;
             max-width: 80%;
         }
     }
     .horario{
-        border-top: 2px solid #C3E6E6;
+        border-top: 2px solid $colorIndexAboutBorder;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 14px;
     }
     .turno{
-        border-top: 2px solid #C3E6E6;
+        border-top: 2px solid $colorIndexAboutBorder;
         display: flex;
         flex-direction: column;
         align-items: center;
