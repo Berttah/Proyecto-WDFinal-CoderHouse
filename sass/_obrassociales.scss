@@ -1,8 +1,8 @@
 /*Obras Sociales Page*/
 /*Main Area*/
 .mainContainer{
-    background-color: #F2FFFF;
-    color: #666;
+    background-color: $colorBody;
+    color: $colorText;
     .titleOS{
         text-align: center;
         font-size: 20px;
@@ -16,14 +16,14 @@
     }
     #toFaba {
         width: fit-content;
-        background-color: #DAFFFF;
+        background-color: $colorNavBar;
         font-size: 14px;
-        border: 2px solid #4C84A1;
+        border: 2px solid $colorHighlights;
         padding: 10px;
         border-radius: 8px;
         color: black;
         &:hover{
-            background-color: #5ED7E0;
+            background-color: $colorToFabaButtonHover;
         }
     }
 }
