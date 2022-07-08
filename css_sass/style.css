@@ -1,3 +1,7 @@
+/*Colors*/
+/*Font Sizes*/
+/*Input Props for Map*/
+/*Font Family*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Overpass&family=Pacifico&family=Poppins:wght@500&display=swap");
 /*General Stuff*/
 * {
@@ -71,16 +75,16 @@ ul {
 }
 .navBoots .dropbttns .nav-item .nav-link {
   padding: 22px 0px;
-  color: black;
+  color: #000;
 }
 .navBoots .dropbttns .nav-item a:hover {
   background-color: #4C84A1;
-  color: white;
+  color: #fff;
 }
 
 #navbarNavDropdown ul li ul li a:hover {
   background-color: #5BA0C2;
-  color: white;
+  color: #fff;
 }
 
 /*Breakpoints*/
@@ -101,7 +105,7 @@ ul {
 /*Footer*/
 .footer {
   background-color: #4C84A1;
-  color: white;
+  color: #fff;
   grid-area: footer;
   font-size: 10px;
   text-align: center;
@@ -144,7 +148,7 @@ ul {
   border-radius: 8px;
   max-width: 80%;
 }
-.info .horario {
+.info .horario, .info .turno {
   border-top: 2px solid #C3E6E6;
   display: flex;
   flex-direction: column;
@@ -152,10 +156,6 @@ ul {
   font-size: 14px;
 }
 .info .turno {
-  border-top: 2px solid #C3E6E6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding-bottom: 10px;
 }
@@ -175,7 +175,7 @@ ul {
   }
 }
 @media (min-width: 576px) {
-  .info .horario {
+  .info .horario, .info .turno {
     border-top: none;
   }
 }
@@ -256,7 +256,7 @@ ul {
 .turnosForm .formulario .fecha {
   grid-area: inputFe;
 }
-.turnosForm .formulario .horario {
+.turnosForm .formulario .horario, .turnosForm .formulario .info .turno, .info .turnosForm .formulario .turno {
   grid-area: inputHo;
   margin-bottom: 10px;
 }
@@ -440,10 +440,7 @@ option {
   text-align: center;
   font-size: 16px;
 }
-.mainContainer .textIndicaciones1 {
-  font-size: 14px;
-}
-.mainContainer .textIndicaciones2 {
+.mainContainer .textIndicaciones1, .mainContainer .textIndicaciones2 {
   font-size: 14px;
 }
 .mainContainer #indicaciones {
@@ -458,7 +455,7 @@ option {
   .mainContainer .subtitleIndicaciones {
     font-size: 20px;
   }
-  .mainContainer .textIndicaciones1 {
+  .mainContainer .textIndicaciones1, .mainContainer .textIndicaciones2 {
     font-size: 16px;
     margin: 0px 5% 20px 5%;
   }
@@ -553,13 +550,9 @@ option {
 .mainContainer .subtitleDisclaimer {
   font-size: 16px;
 }
-.mainContainer .firstDisclaimer {
+.mainContainer .firstDisclaimer, .mainContainer .secondDisclaimer {
   font-size: 14px;
 }
-.mainContainer .secondDisclaimer {
-  font-size: 14px;
-}
-
 /*Media Sizes*/
 @media (min-width: 550px) {
   .mainContainer .titleDisclaimer {
@@ -568,7 +561,7 @@ option {
   .mainContainer .subtitleDisclaimer {
     font-size: 20px;
   }
-  .mainContainer .firstDisclaimer {
+  .mainContainer .firstDisclaimer, .mainContainer .secondDisclaimer {
     font-size: 16px;
     margin: 0px 5% 20px 5%;
   }

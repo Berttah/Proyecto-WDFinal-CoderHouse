@@ -1,7 +1,7 @@
 /*Footer*/
 .footer{
     background-color: $colorHighlights;
-    color: white;
+    @include colorText(claro);
     grid-area: footer;
     font-size: 10px;
     text-align: center;
