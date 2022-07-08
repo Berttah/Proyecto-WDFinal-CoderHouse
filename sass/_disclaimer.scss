@@ -2,7 +2,7 @@
 /*Main Area*/
 .mainContainer{
     background-color: $colorBody;
-    color: $colorText;
+    @include colorText(gris);
     .subtitleDisclaimer{
         font-size: 16px;
     }
@@ -10,7 +10,7 @@
         font-size: 14px;
     }
     .secondDisclaimer{
-        font-size: 14px;
+        @extend .firstDisclaimer
     }
 }
 

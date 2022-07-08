@@ -1,7 +1,7 @@
 /*Turnos Page*/
 /*Main Area*/
 .mainContainer{
-    color: $colorText;
+    @include colorText(gris);
     .titleTurnos{
         text-align: center;
         font-size: 20px;
@@ -96,7 +96,7 @@
                 border-radius: 5px; 
                 background-color: $colorFormButton;
                 font-size: 14px;
-                color: #fff;
+                @include colorText(claro);
                 cursor: pointer;
                 &:hover {
                     background-color: $colorFormButtonHover;
@@ -107,13 +107,13 @@
 }
 input {
     width: calc(100% - 20px);
-    margin-bottom: 5px;
-    margin-left: 10px;
-    padding: 7px;
+    margin-bottom: map-get($inputProps, margB);
+    margin-left: map-get($inputProps, margL);
+    padding: map-get($inputProps, padd);
     border: 1px solid $colorInputBorder;
-    border-radius: 3px;
-    vertical-align: middle;
-    color: $colorText;
+    border-radius: map-get($inputProps, borderR);
+    vertical-align: map-get($inputProps, vertAl);
+    @include colorText(gris);
 }
 input:hover, textarea:hover, select:hover {
     outline: none;
@@ -125,8 +125,8 @@ input:hover, textarea:hover, select:hover {
 }
 select {
     padding: 7px 0;
-    margin-left: 10px;
-    border-radius: 3px;
+    margin-left: map-get($inputProps, margL);
+    border-radius: map-get($inputProps, borderR);
     border: 1px solid $colorInputBorder;
     background: transparent;
     color: $colorText;

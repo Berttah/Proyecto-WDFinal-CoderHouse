@@ -27,12 +27,12 @@
         .nav-item{
             .nav-link{
                 padding: 22px 0px;
-                color: black;
+                @include colorText(oscuro)
             } 
             a{
                 &:hover{
                     background-color: $colorHighlights;
-                    color: white;
+                    @include colorText(claro)
                 }
             }
         }
@@ -46,7 +46,7 @@
                     a{
                         &:hover{
                             background-color: $colorDropMenuHover;
-                            color: white;
+                            @include colorText(claro)
                         }
                     }
                 }

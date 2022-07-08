@@ -1,0 +1,9 @@
+@mixin colorText($colorProp){
+    @if($colorProp==oscuro){
+        color:#000;
+    }
+    @else if($colorProp==claro){
+        color: #fff;
+    }
+    @else{color: #666;}
+}
